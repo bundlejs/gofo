@@ -1,0 +1,26 @@
+RUN_MODE: debug
+
+JWT:
+  SECRET: 142857
+
+SERVER:
+  PORT: 1234
+#  READ_TIMEOUT: 60
+#  WRITE_TIMEOUT: 60
+
+DATABASE:
+  MYSQL:
+    USER: root
+    PASSWORD: 123456
+    HOST: 127.0.0.1
+    PORT: 3307
+    NAME: blog
+    TABLE_PREFIX: blog_
+
+  REDIS:
+    USER: root
+    PASSWORD: 123456
+    HOST: 127.0.0.1
+    PORT: 3307
+    NAME: blog
+    TABLE_PREFIX: blog_
