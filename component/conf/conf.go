@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
+	"time"
 )
 
 type Mysql struct {
@@ -34,9 +35,9 @@ type Jwt struct {
 }
 
 type Server struct {
-	Port         string `yaml:"PORT"`
-	ReadTimeout  string `yaml:"READ_TIMEOUT"`
-	WriteTimeout string `yaml:"WRITE_TIMEOUT"`
+	Port         string        `yaml:"PORT"`
+	ReadTimeout  time.Duration `yaml:"READ_TIMEOUT"`
+	WriteTimeout time.Duration `yaml:"WRITE_TIMEOUT"`
 }
 
 type Conf struct {
