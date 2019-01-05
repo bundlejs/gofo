@@ -1,2 +1,2 @@
 # gofo
-a go web application
+一个基于gin的web工程
